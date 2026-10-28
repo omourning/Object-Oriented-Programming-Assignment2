@@ -6,11 +6,11 @@ public class PasswordResetRequest extends AbstractSupportRequest {
 	private final String accountName;
 
 	public PasswordResetRequest(int id, String title, int basePoints, String accountName) {
-		this.accountName = "";
 		super(id, title, basePoints);
 		if (accountName == null || accountName.isBlank()) {
 			throw new IllegalArgumentException("Account name must not be null or blank.");
 		}
+		this.accountName = "";
 	}
 
 	public String getAccountName() {

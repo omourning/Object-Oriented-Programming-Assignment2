@@ -5,3 +5,6 @@
 /HelpDesk.class
 /Technician.class
 /NetworkIssueRequest$NetworkIssueRequest.class
+/AbstractSupportRequest.class
+/HelpDeskUtil.class
+/PasswordResetRequest.class
