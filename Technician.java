@@ -47,3 +47,4 @@ public class Technician {
     public int hashCode() {
         return Objects.hash(name);
     }
+}

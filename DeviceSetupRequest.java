@@ -5,7 +5,7 @@ public class DeviceSetupRequest extends AbstractSupportRequest {
 
 	private final int deviceCount;
 
-	public DeviceSetupRequest(int id, String title, int basePoints, String deviceCount) {
+	public DeviceSetupRequest(int id, String title, int basePoints, int deviceCount) {
 		super(id, title, basePoints);
 		if (deviceCount <= 0) {
 			throw new IllegalArgumentException("Device count must be positive.");
@@ -32,6 +32,6 @@ public class DeviceSetupRequest extends AbstractSupportRequest {
 
 	@Override
 	public String toString() {
-		return "DeviceSetuptRequest[" + super.toString() + ", devices=" + deviceCount + "]";
+		return "DeviceSetupRequest[devices=" + deviceCount + ", " + super.toString() + "]";
 	}
 }

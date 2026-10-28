@@ -1,13 +1,14 @@
 /*
  * Password or account rest request
  */
-public class PasswordRestRequest extends AbstractSupportRequest {
+public class PasswordResetRequest extends AbstractSupportRequest {
 
 	private final String accountName;
 
-	public PasswordRestRequest(int id, String title, int basePoints, String accountName) {
+	public PasswordResetRequest(int id, String title, int basePoints, String accountName) {
+		this.accountName = "";
 		super(id, title, basePoints);
-		if (account == null || accountName.isBlank()) {
+		if (accountName == null || accountName.isBlank()) {
 			throw new IllegalArgumentException("Account name must not be null or blank.");
 		}
 	}
@@ -31,6 +32,6 @@ public class PasswordRestRequest extends AbstractSupportRequest {
 
 	@Override
 	public String toString() {
-		return "PasswordRestRequest[" + super.toString() + ", account=" + accountName + "]";
+		return "PasswordResetRequest[account=" + accountName + ", " + super.toString() + "]";
 	}
 }
