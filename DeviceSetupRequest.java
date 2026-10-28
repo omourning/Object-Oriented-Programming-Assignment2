@@ -17,4 +17,21 @@ public class DeviceSetupRequest extends AbstractSupportRequest {
 		return deviceCount;
 	}
 
+	@Override
+	public int resolveFor(Technician technician) {
+		if (technician == null) {
+			throw new IllegalArgumentException("Technician must not be null.");
+		}
+		int points = getBasePoints() * deviceCount;
+
+		markResolved();
+
+		technician.addPoints(points);
+		return points;
+	}
+
+	@Override
+	public String toString() {
+		return "DeviceSetuptRequest[" + super.toString() + ", devices=" + deviceCount + "]";
+	}
 }

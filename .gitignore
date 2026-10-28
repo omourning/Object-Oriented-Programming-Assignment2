@@ -2,3 +2,6 @@
 /PasswordRestRequest.class
 /DeviceSetupRequest.class
 /NetworkIssueRequest.class
+/HelpDesk.class
+/Technician.class
+/NetworkIssueRequest$NetworkIssueRequest.class
