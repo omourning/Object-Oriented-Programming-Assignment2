@@ -9,4 +9,4 @@ Adam Smith - Eclipse
 
 Repository Link:
 
-https://github.com/omourning/Object-Oriented-Programming-Assignment2
+https://github.com/omourning/Object-Oriented-Programming-Assignment2.git
